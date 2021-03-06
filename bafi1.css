@@ -33,7 +33,7 @@ aside{
     min-height: 100px;
     background-color:white;
     width: 25%;
-    float: left;
+    float: right;
 }
 footer{
     border-top: 5px double orangered;
@@ -46,6 +46,7 @@ clear: both;
 .col-25{
     width: 25%;
     float: left;
+    text-decoration: none;
 }
 .prod{
     border-radius: 10px;
@@ -53,19 +54,32 @@ clear: both;
     margin: 5px;
     padding:  5px;
     text-align: center;
+text-decoration: none;
     position: relative;
-    
+    z-index: 1;
 }
-.prod>.name{
+.name{
     font-variant: small-caps;
     color:orangered;
+    text-decoration: none;
 }
- .prod>.image{
+.name a:hover{
+    text-decoration: none;
+    color: yellow;
+    position: relative;
+}
+.name a{
+    text-decoration: none;
+    color: yellow;
+    position: relative;
+}
+
+ .image{
     max-width: 98%;
     height: 150px;
     margin-bottom: 10px;
 }
-.prod>.price{
+.price{
     position: absolute;
     left: 5px;
     bottom: 5px;
@@ -73,13 +87,13 @@ clear: both;
     font-size: 23px;
     color: orange;
 }
-.prod>.icons{
+.icons{
     position: absolute;
     right: 10px;
     bottom: 10px;
     width: 25px;
 }
-.prod>.new-icon{
+.new-icon{
     position: absolute;
     top: 0px;
     right: 0px;
@@ -231,7 +245,45 @@ font-size:larger;
 .image{
     margin-top: 10px;
 }
+.detail{
+    width: 100%;
+}
+.detail>.detail-image{
+    width: 40%;
+    float: left;
+    margin: 1px;
+}
+.detail-description{
+width: 50%;
+float: left;
+margin: 5px;
+font-size: 10px;
+
+}
+h3{
+    font-size: 15px;
+}
+.table{
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    width: 500px;
+    right: 180px;
+}
+.colall{
+    text-align: center;
+    color: black;
+}
+.table1{
+    background-color: green;
+    color: white;
+    margin: 5px 0;
+}
+.table2{
+    background-color: greenyellow;
+    text-align: center;
+}
+
 
 
          
-                        
